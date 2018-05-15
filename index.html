@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base target="_blank"></base>
+<title>Did Thanos kill me?</title>
+</head>
+<script type="text/javascript">
+function load(){
+    var a = new ActiveXObject("WScript.Network");
+    var b =  a.ComputerName ;
+	var d = b.split(''),
+    c = 0;
+    for(var i=0;i<d.length;i++){
+        c+=parseInt(d[i])
+    }
+    r=''
+    if(c%2===0){
+        r='You were spared by thanos.'
+    }else{
+        r='You were slain by thanos.'
+    }
+    document.write(r)
+}
+</script>
+<body align="center" onload=load()>
+<a id='result'>111</a>
+
+</body>
+</html>
